@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Week1 My Website+</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-left">My Website</div>
+    <div class="nav-right desktop-menu">
+      <div class="item">Item1</div>
+      <div class="item">Item2</div>
+      <div class="item">Item3</div>
+      <div class="item">Item4</div>
+    </div>
+    <div class="nav-right mobile-menu">
+      <img src="hamburger.png" alt="" id="toggle-btn">
+      <div id="sidebar">
+        <ul>
+          <li>Item1</li>
+          <li>Item2</li>
+          <li>Item3</li>
+          <li>Item4</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">Welcome To MyHome</div>
+  <div class="content">
+    <div class="promotion-box">
+      <div class="promotion">
+        <img src="matsu.png" alt="photo">
+        <div>Promotion 1</div>
+      </div>
+      <div class="promotion">
+        <img src="matsu.png" alt="photo">
+        <div>Promotion 2</div>
+      </div>
+    </div>
+
+    <div class="title-item-box">
+
+      <div class="title-item">
+        <img src="matsu.png" alt="photo" class="matsu-photos">
+        <div class="title-item-content">
+          <img src="star.png" class="star" alt="">
+          <div class="title">Title 1</div>
+        </div>
+      </div>
+      <div class="title-item">
+        <img src="matsu.png" alt="photo" class="matsu-photos">
+        <div class="title-item-content">
+          <img src="star.png" class="star" alt="">
+          <div class="title">Title 2</div>
+        </div>
+      </div>
+      <div class="title-item">
+        <img src="matsu.png" alt="photo" class="matsu-photos">
+        <div class="title-item-content">
+          <img src="star.png" class="star" alt="">
+          <div class="title">Title 3</div>
+        </div>
+      </div>
+
+      <div class="title-item">
+        <img src="matsu.png" alt="photo" class="matsu-photos">
+        <div class="title-item-content">
+          <img src="star.png" class="star" alt="">
+          <div class="title">Title 4</div>
+        </div>
+      </div>
+
+      <div class="title-item">
+        <img src="matsu.png" alt="photo" class="matsu-photos">
+        <div class="title-item-content">
+          <img src="star.png" class="star" alt="">
+          <div class="title">Title 5</div>
+        </div>
+      </div>
+
+      <div class="title-item">
+        <img src="matsu.png" alt="photo" class="matsu-photos">
+        <div class="title-item-content">
+          <img src="star.png" class="star" alt="">
+          <div class="title">Title 6</div>
+        </div>
+      </div>
+      <div class="title-item">
+        <img src="matsu.png" alt="photo" class="matsu-photos">
+        <div class="title-item-content">
+          <img src="star.png" class="star" alt="">
+          <div class="title">Title 7</div>
+        </div>
+      </div>
+        <div class="title-item">
+          <img src="matsu.png" alt="photo" class="matsu-photos">
+          <div class="title-item-content">
+            <img src="star.png" class="star" alt="">
+            <div class="title">Title 8</div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.querySelector("#toggle-btn");
+    const sidebar = document.querySelector("#sidebar");
+    
+    toggleBtn.addEventListener("click", function () {
+        toggleBtn.classList.toggle("active");
+        sidebar.classList.toggle("active");
+      });
+
+    document.addEventListener("click", function (event) {
+      if (event.target.id !== "toggle-btn" && event.target.id !== "sidebar"　) {
+        toggleBtn.classList.remove("active");
+        sidebar.classList.remove("active");
+      }
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+* {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* navbar */
+.nav {
+  display: flex;
+  padding: 10px;
+}
+
+.nav-left {
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  margin-left: auto;
+}
+
+.item {
+  padding: 0 0 0 15px;
+}
+
+/* horizontal line */
+.mobile-menu {
+  display: none;
+}
+
+/* banner */
+.banner {
+  background-color: rgba(226, 226, 226, 0.836);
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+
+/* photos */
+
+.content {
+  width: 1160px;
+  margin: auto;
+}
+
+/* promotion-box */
+.promotion-box {
+  display: flex;
+  justify-content: center;
+}
+
+.promotion {
+  display: flex;
+  align-items: center;
+  width:590px;
+  height: 50px;
+  margin:10px;
+  background-color: rgba(226, 226, 226, 0.836);
+}
+
+.promotion > img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.promotion > div { 
+  margin: 10px;
+}
+
+/* title-item-box */
+.title-item-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title-item {
+  padding: 0;
+  margin: 10px;
+  width: 270px;
+  height: 200px;
+  position: relative; /* added */
+}
+
+/* PLUS */
+
+.matsu-photos {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.title-item-content {
+  position: relative;
+  width: 270px;
+  height: 200px;
+}
+
+.star {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.title {
+  width: 270px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  line-height: 35px;
+  height: 35px;
+  /* top: 167.56px; */
+  bottom: 0;
+}
+
+
+
+/* RWD */
+@media (max-width:1200px) {
+
+  .content {
+    width: 100%;
+  }
+
+  .promotion {
+    width: 45%;
+  }
+
+  .title-item {
+    width: 45%;
+    margin: 10px;
+    height: 350px;
+  }
+
+  .matsu-photos {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .title-item-content{
+    width: 100%;
+    height: 350px;
+  }
+
+  .title {
+    width: 100%;
+  }
+}
+
+
+@media (min-width:361px) and (max-width:600px) {
+  .content {
+    width: 90%;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-menu>img {
+    height: 20px;
+    width: auto;
+  }
+
+  .banner {
+    font-size: 30px;
+  }
+  
+  .promotion-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .promotion {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .title-item {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .matsu-photos {
+    width: 100%;
+  }
+
+}
+
