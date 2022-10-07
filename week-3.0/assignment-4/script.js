@@ -1,4 +1,6 @@
-url = "https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assignment.json"
+'use strict'
+
+const url = "https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assignment.json"
 
 fetch(url).then(function(response){
   return response.json()
@@ -7,10 +9,10 @@ fetch(url).then(function(response){
   let spotData = data["result"]["results"]
 
   // add 2 small photos at the top of the page
-  for(i=0; i<2; i++){
+  for(let i=0; i<2; i++){
     // get URLs of photos
     let photoFiles = spotData[i]["file"].split("https://")
-    photoUrl = "https://" + photoFiles[1]
+    let photoUrl = "https://" + photoFiles[1]
     // get names of spots
     let spotName = spotData[i]["stitle"]
 
@@ -18,10 +20,10 @@ fetch(url).then(function(response){
   }
 
   // add 8 big photos at the bottom of the page
-  for (i = 2; i < 10; i++){
+  for (let i = 2; i < 10; i++){
     // get URLs of photos
     let photoFiles = spotData[i]["file"].split("https://")
-    photoUrl = "https://" + photoFiles[1]
+    let photoUrl = "https://" + photoFiles[1]
     // get names of spots
     let spotName = spotData[i]["stitle"]
     addBigSpot(photoUrl, spotName)
@@ -38,7 +40,7 @@ fetch(url).then(function(response){
       }
       // get URLs of photos
       let photoFiles = spotData[i]["file"].split("https://")
-      photoUrl = "https://" + photoFiles[1]
+      let photoUrl = "https://" + photoFiles[1]
       // get names of spots
       let spotName = spotData[i]["stitle"]
       addBigSpot(photoUrl, spotName)
