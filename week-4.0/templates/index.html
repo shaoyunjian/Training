@@ -21,10 +21,18 @@
   </div>
   <hr/>
   <div class="calculate-div">
-    <form action="/square" method="POST">
-      <div>正整數 <input type="text" name="number"></div>
-      <div class="calculate-btn"><button>計算</button></div>
-    </form>
+    <div>正整數 <input type="text" name="number" id="number"></div>
+    <div class="calculate-btn"><button>計算</button></div>
   </div>
+
+  <script>
+    let number = document.querySelector("#number").value
+    let btn = document.querySelector(".calculate-btn")
+    btn.addEventListener("click", ()=>{
+      let number = document.querySelector("#number").value
+      window.location = "/square/" + number
+    })
+  </script>
+  
 </body>
 </html>
