@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request, session, url_for
+from flask import Flask, render_template, redirect, request, session
 app = Flask(__name__)
 app.secret_key = "anything"
 
@@ -39,14 +39,6 @@ def signOut():
   return redirect("/")
 
 # 計算正整數的平方
-@app.route("/square", methods=["POST"])
-def square():
-  number = request.form["number"]
-  if len(number)>0:
-    return redirect(url_for('number', number=number))
-  else: 
-    return redirect("/")
-
 @app.route("/square/<number>")
 def number(number):
   number = int(number)
