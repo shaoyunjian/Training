@@ -29,7 +29,11 @@
     let btn = document.querySelector(".calculate-btn")
     btn.addEventListener("click", ()=>{
       let number = document.querySelector("#number").value
-      window.location = "/square/" + number
+      if(number.length > 0 && Number(number)==number){
+        window.location = "/square/" + number}
+      else {
+        window.location = "/"
+      }
     })
   </script>
   
