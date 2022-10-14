@@ -19,18 +19,5 @@
       <div class="login-btn"><button>登入</button></div>
     </form>
   </div>
-  
-  <script>
-    let btn = document.querySelector(".calculate-btn")
-    btn.addEventListener("click", ()=>{
-      let number = document.querySelector("#number").value
-      if(number.length > 0 && Number(number)==number){
-        window.location = "/square/" + number}
-      else {
-        window.location = "/"
-      }
-    })
-  </script>
-  
 </body>
 </html>
