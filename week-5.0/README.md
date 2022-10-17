@@ -2,9 +2,9 @@
 ---
 ### 要求⼆：建立資料庫和資料表
 
-● 建立⼀個新的資料庫，取名字為 website 。
+● 建立⼀個新的資料庫，取名為 website 。
 
-● 在資料庫中，建立會員資料表，取名字為 member 。
+● 在資料庫中，建立會員資料表，取名為 member 。
 
 ```sql
 SHOW DATABASES;
@@ -42,6 +42,7 @@ SELECT * FROM member;
 ![Q3-2](https://user-images.githubusercontent.com/110411867/196208116-b0420d3f-8a67-436a-9404-f8eb4808b49e.png)
 
 
+
 ● 使⽤ SELECT 指令取得所有在 member 資料表中的會員資料，並按照 time 欄位，由近到遠排序。
 
 ```sql
@@ -49,6 +50,7 @@ SELECT * FROM member ORDER BY time DESC;
 ```
 
 ![Q3-3](https://user-images.githubusercontent.com/110411867/196208120-d798c0e8-cbb5-472e-9004-29f989657643.png)
+
 
 
 ● 使⽤ SELECT 指令取得 member 資料表中第 2 ~ 4 共三筆資料，並按照 time 欄位，由近到遠排序。 ( 並非編號 2、3、4 的資料，⽽是排序後的第 2 ~ 4 筆資料 )
@@ -60,6 +62,7 @@ SELECT * FROM member ORDER BY time DESC LIMIT 1, 3;
 ![Q3-4](https://user-images.githubusercontent.com/110411867/196208122-057c3bf7-fb0f-48e8-a1d7-1cf94c20574c.png)
 
 
+
 ● 使⽤ SELECT 指令取得欄位 username 是 test 的會員資料。
 
 ```sql
@@ -69,6 +72,7 @@ SELECT * FROM member WHERE username='test';
 ![Q3-5](https://user-images.githubusercontent.com/110411867/196208124-3c72d23e-19d1-4f99-b0ab-5f037b128986.png)
 
 
+
 ● 使⽤ SELECT 指令取得欄位 username 是 test、且欄位 password 也是 test 的資料。
 
 ```sql
@@ -76,6 +80,7 @@ SELECT * FROM member WHERE username='test' and password='test';
 ```
 
 ![Q3-6](https://user-images.githubusercontent.com/110411867/196208126-a20142a4-4d2d-4809-b584-49a124a6cd19.png)
+
 
 
 ● 使⽤ UPDATE 指令更新欄位 username 是 test 的會員資料，將資料中的 name 欄位改成 test2。
@@ -101,6 +106,7 @@ SELECT COUNT(*) FROM member;
 ![Q4-1](https://user-images.githubusercontent.com/110411867/196208134-c8ef6c94-5f57-4799-b4a4-a66b9eb434c6.png)
 
 
+
 ● 取得 member 資料表中，所有會員 follower_count 欄位的總和。
 
 ```sql
@@ -108,6 +114,7 @@ SELECT SUM(follower_count) FROM member;
 ```
 
 ![Q4-2](https://user-images.githubusercontent.com/110411867/196208135-4bb9c0d6-4f59-46c0-9553-a60522b798ec.png)
+
 
 
 ● 取得 member 資料表中，所有會員 follower_count 欄位的平均數。
@@ -144,6 +151,8 @@ SELECT * FROM message;
 
 ![Q5-1](https://user-images.githubusercontent.com/110411867/196208140-bd516f4b-bb82-4f2d-b653-9b7dc00560ed.png)
 
+
+
 ● 使⽤ SELECT 搭配 JOIN 語法，取得所有留⾔，結果須包含留⾔者會員的姓名。
 
 ```sql
@@ -162,6 +171,8 @@ SELECT * FROM member INNER JOIN message ON member.id=message.member_id;
 ![Q5-3](https://user-images.githubusercontent.com/110411867/196208148-233408a0-195e-4778-a849-94fd73e767bb.png)
 
 
+
+
 ● 使⽤ SELECT 搭配 JOIN 語法，取得 member 資料表中欄位 username 是 test 的所有留⾔，資料中須包含留⾔者會員的姓名。
 
 ```sql
@@ -177,4 +188,4 @@ SELECT member.name, message.content FROM member INNER JOIN message ON member.id=
 SELECT AVG(like_count) FROM member INNER JOIN message ON member.id=message.member_id WHERE member.username='test';
 ```
 
-
+![Q5-5](https://user-images.githubusercontent.com/110411867/196220023-9063a495-6100-462f-a0fa-7a67cee0d27c.png)
