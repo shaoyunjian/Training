@@ -25,6 +25,7 @@
 - Using [JavaScript Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to access a json link to get spot data, and display photos on page.
 - Using `document.createElement()` and `appendChild()` instead of innerHTML.
 
+<img src="https://user-images.githubusercontent.com/110411867/196897537-9b53cf06-45ca-4f69-b961-0ec633658de1.png" height="500"/>
 
 ---
 ### ■ Assignment 4: Add a Load More Button
@@ -33,4 +34,12 @@
 
 - Add a button to load more data.
 - The button will disappear when all contents are loaded. (as shown in the video below)
+
+<img src="https://user-images.githubusercontent.com/110411867/196898261-77d9cae2-61fd-4284-bb0f-c5c61bd00df2.png" height="500"/>
+
+
+https://user-images.githubusercontent.com/110411867/196899085-a5920400-6e2c-4a01-bedc-892ba8db817d.mp4
+
+
+
 
