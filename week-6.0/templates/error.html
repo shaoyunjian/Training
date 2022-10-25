@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+  <title>登入失敗</title>
+</head>
+<body>
+  <div class="banner">
+    <div>失敗頁面</div>
+  </div>
+  <div class="error-content" >
+    {{ message }}
+  </div>
+  <button class="back-homepage-btn"><a href="/">首頁</a></button>
+</body>
+</html>

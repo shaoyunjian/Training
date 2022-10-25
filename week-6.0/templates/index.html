@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+  <title>Week-6</title>
+</head>
+<body>
+  <div class="banner">
+    <div>歡迎光臨，請註冊登入系統</div>
+  </div>
+  <div class="signup-system">
+    <form action="/signup" method="POST">
+      <div class="signup-title">註冊系統</div>
+      <div>姓名 <input type="text" name="name"></div>
+      <div>帳號 <input type="text" name="username"></div>
+      <div>密碼 <input type="password" name="password"></div>
+      <div><input type="submit" value="註冊" id="signup-btn"></div>
+      
+    </form>
+  </div>
+  <hr />
+  <div class="login-system">
+    <form action="/signin" method="POST">
+      <div class="login-title">登入系統</div>
+      <div>帳號 <input type="text" name="username"></div>
+      <div>密碼 <input type="password" name="password"></div>
+      <div><input type="submit" value="登入" id="login-btn"></div>
+    </form>
+  </div>
+  
+</body>
+</html>
