@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  height: 100px;
+  background-color: #223344;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.signup-system,
+.login-system{
+  padding: 40px 0 20px 0;
+  line-height: 35px;
+  text-align: center;
+}
+
+.send-message,
+.name-search,
+.edit-name{
+  line-height: 35px;
+  text-align: center;
+}
+
+.messages{
+  text-align: center;
+}
+
+.signup-title,
+.login-title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.member-content,
+.error-content {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logout-btn,
+#message-submit-btn,
+#signup-btn,
+#login-btn,
+.back-homepage-btn {
+  background-color: rgb(187, 187, 187);
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 15px;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  line-height: 30px;
+}
+
+.logout-btn:hover,
+#message-submit-btn:hover,
+#signup-btn:hover,
+#login-btn:hover,
+.back-homepage-btn:hover {
+  background-color: rgb(127, 127, 127);
+}
+
+
+.send-message-title,
+.message-box-title,
+.name-search-title,
+.edit-name-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0 0 0 ;
+}
+
+.messages{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.message-box{
+  padding: 10px 0 0 0;
+  text-align: left;
+}
+
+.message-author{
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+#name-search-btn,
+#edit-name-btn{
+  background-color: rgb(187, 187, 187);
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 15px;
+  height: 30px;
+  width: 50px;
+  margin-left: 5px;
+}
+
+#name-search-btn:hover,
+#edit-name-btn:hover{
+  background-color: rgb(127, 127, 127);
+}

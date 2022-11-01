@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+  <title>登入成功</title>
+</head>
+<body>
+  <div class="banner">
+    <div>歡迎光臨，這是會員頁</div>
+  </div>
+  <div class="member-content">
+    {{ name }}！歡迎登入系統！
+  </div>
+  <div class="logout-btn">
+    <a href="/signout">登出</a>
+  </div>
+
+  <hr/>
+  <!-- Message sending system -->
+  <div class="send-message">
+    <div class="send-message-title">快來留言吧</div>
+    <form action="/message" method="POST">
+      <div><input type="text" name="message" placeholder="請輸入內容"></div>
+      <div><input type="submit" value="送出" id="message-submit-btn"></div>
+    </form>
+  </div>
+  <hr/>
+  <!-- Week7 Added: Name searching system -->
+  <div class="name-search">
+    <div class="name-search-title">查詢會員姓名</div>
+    <form action="/api/member" method="GET">
+      <input type="text" name="username" placeholder="請輸入會員帳號" id="name-search-input">
+      <input type="submit" value="查詢" id="name-search-btn">
+    </form>
+    <div id="name-search-result"><br></div>
+  </div>
+  <hr />
+  <!-- Week7 Added: Name editing system-->
+  <div class="edit-name">
+    <div class="edit-name-title">更新我的姓名</div>
+    <form action="/api/member" method="PATCH">
+      <input type="text" name="username" placeholder="請輸入新的姓名" id="edit-name-input">
+      <input type="submit" value="更新" id="edit-name-btn">
+    </form>
+    <div id="edit-name-result"><br></div>
+  </div>
+  <hr />
+  <!-- Message box  -->
+  <div class="messages">
+    <div class="message-box-title">留言板</div>
+    <div class="message-box">
+      {% for name, content in messages %}
+      <div><span class="message-author">{{ name }}</span>：{{ content }}</div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <script src="{{ url_for('static', filename='javascript/script.js')}}"></script>
+</body>
+</html>
