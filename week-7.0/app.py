@@ -152,9 +152,10 @@ def revise_member_data():
         values = (name, session["username"])
         cursor6.execute(select, values)
         cnx6.commit()
+        session["name"] = name
     return jsonify({"ok": True}) 
   else: 
     return jsonify({"error": True})
 
 
-app.run(port=3000, debug=True)
+app.run(port=3000, debug=False)

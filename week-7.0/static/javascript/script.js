@@ -29,7 +29,7 @@ let nameEditInput = document.querySelector("#edit-name-input")
 let memberContent = document.querySelector(".member-content")
 const nameEditBtn = document.querySelector("#edit-name-btn")
 
-nameEditBtn.addEventListener("click", (event)=>{
+nameEditBtn.addEventListener("click", (event) => {
   event.preventDefault();
   let url = "http://127.0.0.1:3000/api/member?username="
   let nameEditInputValue = nameEditInput.value
@@ -42,11 +42,11 @@ nameEditBtn.addEventListener("click", (event)=>{
     return response.json();})
   .then(response => {
     let nameEditResult = document.querySelector("#edit-name-result")
-    if (response["ok"]== true){
+    if(response["ok"] == true){
       nameEditResult.innerHTML = `<div>更新成功</div>`
-      memberContent.innerHTML = `${ nameEditInputValue }！歡迎登入系統！`
-    } else {
-      nameEditResult.innerHTML =`<div>更新失敗／請不要空白</div>`
+      memberContent.innerHTML = `${nameEditInputValue}！歡迎登入系統！`
+    } else{
+      nameEditResult.innerHTML = `<div>更新失敗／請不要空白</div>`
     }
   })
   document.querySelector("#edit-name-input").value = ""
