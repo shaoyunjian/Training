@@ -27,7 +27,8 @@
     <br>
     <img src="https://user-images.githubusercontent.com/110411867/200277051-b1271c17-bf9d-41ea-979c-48a3b1acd768.gif" width="500"/>
     
-    
+<hr>
+
 ### ■ Login System
 
 1. **Login Success Page**
@@ -36,22 +37,27 @@
 2. **Login Failed Page**
     - Route: / ⇒  /signin ⇒  /error?message=自訂的錯誤訊息
     - HTTP Method: GET
+    
     <br>
     <img src="https://user-images.githubusercontent.com/110411867/200277033-023b0a64-1d1c-4e73-bfd2-6548be44c087.gif" width="500"/>
 
+<hr>
 
 ### ■ Message/Chat System
 
 - Route: /member ⇒ /message ⇒ /member
 - HTTP Method: POST
 - [https://gyazo.com/ce6ba344b111aaa741b2d42926144d96](https://gyazo.com/ce6ba344b111aaa741b2d42926144d96)
+  
   <br>
   <img src="https://user-images.githubusercontent.com/110411867/200277053-5beacc75-6948-4277-b083-c94afa8cac02.gif" width="500"/>
 
+<hr>
 
 ### ■ Logout System
 
 - Route: /member ⇒ /signout ⇒ /member
 - HTTP Method: GET
+  
   <br>
   <img src="https://user-images.githubusercontent.com/110411867/200277059-6b3f60fd-13f6-431b-a552-dd0bcbe53c08.gif" width="500"/>
