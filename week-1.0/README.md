@@ -1,6 +1,6 @@
 # Responsive Web Design Page
 
-⁂ URL：[https://shaoyunjian.github.io/training/week-1.0/](https://shaoyunjian.github.io/training/week-1.0/)
+⁂ URL：[https://shaoyunjian.github.io/Training/week-1.0/](https://shaoyunjian.github.io/Training/week-1.0/)
 - Using CSS `flexbox` to build the layout.
 - Using CSS `object-fit` property to preserve the aspect ratio of photos.
 - Using CSS `media queries` to create a responsive page.
@@ -31,7 +31,7 @@ Four items at the top-right corner are changed into a three-horizontal-line icon
 
 ### ■ Change Design of Photos.
 
-⁂ URL：[https://shaoyunjian.github.io/training/week-1.1/](https://shaoyunjian.github.io/training/week-1.1/)
+⁂ URL：[https://shaoyunjian.github.io/Training/week-1.1/](https://shaoyunjian.github.io/Training/week-1.1/)
 
 - Add a caption onto a photo and add a star icon on the top-right corner.
 
@@ -39,7 +39,7 @@ Four items at the top-right corner are changed into a three-horizontal-line icon
 
 ### ■ Create a Collapsed Sidebar
 
-⁂ URL：[https://shaoyunjian.github.io/training/week-1.2/](https://shaoyunjian.github.io/training/week-1.2/)
+⁂ URL：[https://shaoyunjian.github.io/Training/week-1.2/](https://shaoyunjian.github.io/Training/week-1.2/)
 
 - Using JavaScript to create the toggle button.
 - After taping the 3-horizontal-line icon on the top-right corner, a sidebar will pop up.
